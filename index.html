@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내가 좋아하는 것들</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>내가 좋아하는 것들</h1>
+        
+        <!-- 음악 섹션 -->
+        <div class="category-section">
+            <div class="category-header">
+                <h2>🎵 음악</h2>
+            </div>
+            <div class="comment-form-card">
+                <div class="comment-input-wrapper">
+                    <textarea 
+                        id="musicInput" 
+                        class="comment-input" 
+                        placeholder="좋아하는 음악이나 아티스트를 남겨주세요..."
+                        rows="2"
+                    ></textarea>
+                    <button class="submit-btn" onclick="addComment('music', 'musicInput', 'musicContainer')">
+                        <span class="btn-text">등록</span>
+                    </button>
+                </div>
+            </div>
+            <div id="musicContainer" class="comments-container"></div>
+        </div>
+
+        <!-- 음식 섹션 -->
+        <div class="category-section">
+            <div class="category-header">
+                <h2>🍽️ 음식</h2>
+            </div>
+            <div class="comment-form-card">
+                <div class="comment-input-wrapper">
+                    <textarea 
+                        id="foodInput" 
+                        class="comment-input" 
+                        placeholder="좋아하는 음식을 남겨주세요..."
+                        rows="2"
+                    ></textarea>
+                    <button class="submit-btn" onclick="addComment('food', 'foodInput', 'foodContainer')">
+                        <span class="btn-text">등록</span>
+                    </button>
+                </div>
+            </div>
+            <div id="foodContainer" class="comments-container"></div>
+        </div>
+
+        <!-- 연예인 섹션 -->
+        <div class="category-section">
+            <div class="category-header">
+                <h2>⭐ 연예인</h2>
+            </div>
+            <div class="comment-form-card">
+                <div class="comment-input-wrapper">
+                    <textarea 
+                        id="celebrityInput" 
+                        class="comment-input" 
+                        placeholder="좋아하는 연예인을 남겨주세요..."
+                        rows="2"
+                    ></textarea>
+                    <button class="submit-btn" onclick="addComment('celebrity', 'celebrityInput', 'celebrityContainer')">
+                        <span class="btn-text">등록</span>
+                    </button>
+                </div>
+            </div>
+            <div id="celebrityContainer" class="comments-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
